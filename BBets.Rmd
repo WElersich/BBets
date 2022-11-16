@@ -42,13 +42,38 @@ The function will be given a class_size by number of students, odds, and Number_
   
 <!--Explain and display your method of coming up with a 95% confidence interval of  professor Brownlows winnings (or losings)-->
 
+```{r}
+  IBrLw<-numeric(200)
+  for(i in 1:200){
+    IBrLw[i]=BrLw()
+    
+    
+  } 
+  
+  hist(IBrLw)
+  favstats(IBrLw)
+  SIBrLW <- sort(IBrLw)
+```
+
+the 95% confidence interval is `r SIBrLW[5]` to `r SIBrLW[195]`
 
 # What are the fair odds? Use manipulation of odds in the function to tune Brownlows earnings to zero. 
 
 
 <!--Decide on your methods:  In this section explain the approach you will take to attack the issue --- how will you decide on a likely estimate of professor Brownlow's earnings or losses after 637 bets. Also explain how you construct a 95% confidence interval about your estimate of his winnings !-->
 
-
+```{r}
+  IBrLw<-numeric(200)
+  for(i in 1:200){
+    IBrLw[i]=BrLw(odds = 4.2)
+    
+    
+  } 
+  
+  hist(IBrLw)
+  favstats(IBrLw)
+  SIBrLW <- sort(IBrLw)
+```
 
 
 # What size of class makes the 2:1 bet fair?  Use manipulation of number of Students to tune Brownlows earnings to zero.
@@ -56,7 +81,18 @@ The function will be given a class_size by number of students, odds, and Number_
 <!--Explain and display the results of your method of coming up with the estimate of professor Brownlows betting profits!-->
 
 
-
+```{r}
+  IBrLw<-numeric(200)
+  for(i in 1:200){
+    IBrLw[i]=BrLw(numClass = 4.2)
+    
+    
+  } 
+  
+  hist(IBrLw)
+  favstats(IBrLw)
+  SIBrLW <- sort(IBrLw)
+```
 
 
 
