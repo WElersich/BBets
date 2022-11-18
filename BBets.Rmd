@@ -103,3 +103,4 @@ If there are multiple class, a mean class size of 28.95 would be the most fair. 
 
 <!--Discussion and conclusion here.  If professor Brownlow is consistantly making or losing money how could he change his payout so that his profits center on zero?  Also discuss what size his class should be in order to have his current scheme balance at zero profit.!-->
 
+Using resampling we were able to answer all of these questions. We changed the parameters of our simulation until we obtain the values we want, such as a mean close to 0. The parameters we change, such as odds, or class size are our variables of interest. 
