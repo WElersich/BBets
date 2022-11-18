@@ -43,8 +43,8 @@ The function will be given a class_size by number of students, odds, and Number_
 <!--Explain and display your method of coming up with a 95% confidence interval of  professor Brownlows winnings (or losings)-->
 
 ```{r}
-  Teach<-numeric(200)
-  for(i in 1:200){
+  Teach<-numeric(40)
+  for(i in 1:40){
     Teach[i]=BrLw()
     
     
@@ -55,7 +55,7 @@ The function will be given a class_size by number of students, odds, and Number_
   STeach <- sort(Teach)
 ```
 
- The mean earnings of 200 Brownlow clones, and the amount we should expect that Brownlow won, is `r mean(Teach)`, with a standard deviation of `r sd(Teach)`. The 95% confidence interval is `r mean(Teach)-2*sd(Teach)` to `r mean(Teach)+2*sd(Teach)`
+ The mean earnings of 40 Brownlow clones, and the amount we should expect that Brownlow won, is `r mean(Teach)`, with a standard deviation of `r sd(Teach)`. The 95% confidence interval is `r mean(Teach)-2*sd(Teach)` to `r mean(Teach)+2*sd(Teach)`. This data was gained by resampling 40 times. Initially, we resampled 200 times, but this was lowered to 40, because it would be cheaper to carry out. We can do this because the central limit theorem allows it.
 
 # What are the fair odds? Use manipulation of odds in the function to tune Brownlows earnings to zero. 
 
