@@ -63,18 +63,19 @@ The function will be given a class_size by number of students, odds, and Number_
 <!--Decide on your methods:  In this section explain the approach you will take to attack the issue --- how will you decide on a likely estimate of professor Brownlow's earnings or losses after 637 bets. Also explain how you construct a 95% confidence interval about your estimate of his winnings !-->
 
 ```{r}
-  IBrLw<-numeric(200)
-  for(i in 1:200){
-    IBrLw[i]=BrLw(odds = 4.2)
+  Teach<-numeric(40)
+  for(i in 1:40){
+    Teach[i]=BrLw(odds = 4.2)
     
     
   } 
   
-  hist(IBrLw)
-  favstats(IBrLw)
-  SIBrLW <- sort(IBrLw)
+  hist(Teach)
+  favstats(Teach)
+  STeach <- sort(Teach)
 ```
 
+fair odds are 4.2:1 (21:5)
 
 # What size of class makes the 2:1 bet fair?  Use manipulation of number of Students to tune Brownlows earnings to zero.
 
@@ -89,11 +90,7 @@ The function will be given a class_size by number of students, odds, and Number_
     
   } 
   
-  hist(IBrLw)
-  favstats(IBrLw)
-  SIBrLW <- sort(IBrLw)
 ```
-
 
 
 
@@ -101,4 +98,5 @@ The function will be given a class_size by number of students, odds, and Number_
 # Discussion and Conclusion
 
 <!--Discussion and conclusion here.  If professor Brownlow is consistantly making or losing money how could he change his payout so that his profits center on zero?  Also discuss what size his class should be in order to have his current scheme balance at zero profit.!-->
+
 
