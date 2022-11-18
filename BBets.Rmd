@@ -83,9 +83,9 @@ Fair odds are 4.42:1 (442:100). This value was gained through trial and error, b
 
 
 ```{r}
-  Teach<-numeric(40)
-  for(i in 1:40){
-    Teach[i]=BrLw(odds = 2, numClass = 29)
+  Teach<-numeric(500)
+  for(i in 1:500){
+    Teach[i]=BrLw(odds = 2, numClass = 28.95)
     
     
   } 
@@ -95,7 +95,7 @@ Fair odds are 4.42:1 (442:100). This value was gained through trial and error, b
   STeach <- sort(Teach)
 ```
 
-A class size of 28 or 29 would be the most fair. A class size of 28 slightly favors the class, while a class size of 29 slightly favors Brownlow.
+If there are multiple class, a mean class size of 28.95 would be the most fair. A class size of 28 favors the class, while a class size of 29 favors Brownlow.
 
 
 
