@@ -83,15 +83,19 @@ fair odds are 4.2:1 (21:5)
 
 
 ```{r}
-  IBrLw<-numeric(200)
-  for(i in 1:200){
-    IBrLw[i]=BrLw(numClass = 4.2)
+  Teach<-numeric(40)
+  for(i in 1:40){
+    Teach[i]=BrLw(odds = 2, numClass = 29)
     
     
   } 
   
+  hist(Teach)
+  favstats(Teach)
+  STeach <- sort(Teach)
 ```
 
+A class size of 28 or 29 would be the most fair. A class size of 28 slightly favors the class, while a class size of 29 slightly favors Brownlow.
 
 
 
